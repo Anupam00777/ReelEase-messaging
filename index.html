@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="input.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+    <div class="flex flex-col mainField bg-white h-screen sm:text-xl md:text-2xl lg:text-3xl">
+        <div class="actionField md:min-h-[80px] lg:[min-h-100px] flex fixed h-[5vh] py-2 min-h-[50px] bg-[#30d5c7] w-full items-center justify-center top-0">
+            <div class="back absolute flex h-full aspect-square items-center justify-center left-0" draggable="true">
+                <button
+                    class="backButton cursor-pointer text-center font-bold flex h-full w-full items-center justify-center"><i
+                        class="fa fa-arrow-left"></i></button>
+            </div>
+            <div class="image h-full flex rounded-[50%] aspect-square items-center justify-center border border-[#00ffea] overflow-hidden " draggable="true">
+                <img class="" src="./assets/icons/camera.png" alt="image" srcset="">
+            </div>
+            <div class="name flex h-full items-center pl-2 font-semibold">Anupam</div>
+        </div>
+        <div class="chats flex h-">Hi</div>
+        <div
+            class="inputField md:min-h-[80px] lg:[min-h-100px] flex fixed h-[5vh] py-2 min-h-[50px] bg-[#30d5c7] w-full items-center justify-center bottom-0">
+            <div class="imageField cursor-pointer flex h-full w-max aspect-square items-center justify-center" draggable="true"> 
+                    <button class="btn imageButton text-center font-bold flex h-full w-full rounded-[50%] border bg-white shadow-md border-black  items-center justify-center"><i class="fa fa-camera"></i></button>
+
+            </div>
+            <div class="textInputField cursor-text flex h-full px-2 items-center w-[70vw] max-w-[700px] min-w-[200px]">
+                <input class="textInput flex border rounded-[50px] outline-0 text-black border-black w-full h-full max-h-[40px] md:max-h-[60px] lg:[max-h-80px] pl-3" type="text" name="" id="textInput" placeholder="Enter Your Message">
+            </div>
+            <div class="sendField flex h-full w-max aspect-square items-center justify-center" draggable="true">
+                <button class="sendButton cursor-pointer text-center font-bold flex h-full w-full rounded-[50%] border bg-white shadow-md border-black  items-center justify-center"><i class="fa fa-arrow-right"></i></button>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
